@@ -113,8 +113,10 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
 
-# IL2CPP build backup folders
+# Unity build-generated folders
+/*_BurstDebugInformation_DoNotShip/
 /*_BackUpThisFolder_ButDontShipItWithYourGame/
+/[Bb]uild/
 
 # macOS
 .DS_Store
