@@ -121,3 +121,7 @@ InitTestScene*.unity*
 # macOS
 .DS_Store
 **/.DS_Store
+
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
