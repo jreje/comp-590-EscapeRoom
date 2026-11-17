@@ -125,3 +125,7 @@ InitTestScene*.unity*
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Unity scene crash recovery
+/[Aa]ssets/_Recovery/
+/[Aa]ssets/_Recovery.meta
