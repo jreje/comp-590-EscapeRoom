@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 2690309152842215492}
   - component: {fileID: 8171896759971010575}
   - component: {fileID: 8488177807961552915}
+  - component: {fileID: 2392063637760051969}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -348,6 +349,19 @@ MonoBehaviour:
   visual: {fileID: 5171019835033483695}
   frontRenderer: {fileID: 7502336249383142692}
   audioSource: {fileID: 8171896759971010575}
+--- !u!114 &2392063637760051969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4245930416531837551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdfa52205dca458c8dcbc126981de24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TileFlipper
+  flipDuration: 0.3
 --- !u!1 &5438872776572109881
 GameObject:
   m_ObjectHideFlags: 0
