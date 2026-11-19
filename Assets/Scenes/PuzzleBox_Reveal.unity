@@ -10823,11 +10823,19 @@ MonoBehaviour:
   revealSound: {fileID: 0}
   onRevealed:
     m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  <IsRevealed>k__BackingField: 0
-  finalPosition: {x: 0, y: 0, z: 0}
-  finalScale: {x: 0, y: 0, z: 0}
+      m_Calls:
+      - m_Target: {fileID: 1628983651}
+        m_TargetAssemblyTypeName: GridReveal, Assembly-CSharp
+        m_MethodName: Reveal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1628983652
 Transform:
   m_ObjectHideFlags: 0
@@ -10837,7 +10845,7 @@ Transform:
   m_GameObject: {fileID: 1628983650}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.934, y: 2.226, z: -0.24}
+  m_LocalPosition: {x: 6.909611, y: 2.15, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
