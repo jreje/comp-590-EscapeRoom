@@ -29,6 +29,8 @@ public class GridReveal : MonoBehaviour
     public ParticleSystem revealParticles;   // e.g. sparkles/dust coming out of the chest
     public AudioSource revealSound;          // e.g. magical whoosh
 
+
+
     [Header("Events")]
     public UnityEvent onRevealed;            // fires when the grid finishes rising
 

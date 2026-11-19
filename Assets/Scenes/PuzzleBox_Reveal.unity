@@ -10814,10 +10814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc41e1dfcff7c48f49cf895032fbedac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridReveal
-  grid: {fileID: 693392559}
+  grid: {fileID: 0}
   riseDistance: 0.5
   riseDuration: 1.5
-  delay: 0.2
+  delay: 0.5
   scaleUp: 1
   revealParticles: {fileID: 0}
   revealSound: {fileID: 0}
