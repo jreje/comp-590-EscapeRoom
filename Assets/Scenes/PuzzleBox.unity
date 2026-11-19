@@ -4097,6 +4097,106 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.009499997, y: 0.01770607, z: -0.0011095554}
     m_Extent: {x: 0.04527676, y: 0.05372102, z: 0.06648618}
   m_DirtyAABB: 0
+<<<<<<< Updated upstream
+=======
+--- !u!1 &693392559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693392562}
+  - component: {fileID: 693392561}
+  - component: {fileID: 693392560}
+  m_Layer: 0
+  m_Name: MemoryGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &693392560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693392559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c6f13107e0b4246ae5a0b92dbaa6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryGameController
+  maxMistakes: 3
+  mismatchRevealTime: 1
+  reshuffleOnFail: 1
+  onMatch:
+    m_PersistentCalls:
+      m_Calls: []
+  onMismatch:
+    m_PersistentCalls:
+      m_Calls: []
+  onSolved:
+    m_PersistentCalls:
+      m_Calls: []
+  onFailed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &693392561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693392559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf62ac59a3504f36905d288c954b981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryGrid
+  tilePrefab: {fileID: 8488177807961552915, guid: 2d6b8ce9a56b1490ea9a538d84468c4c, type: 3}
+  rows: 3
+  columns: 3
+  spacing: 0.25
+  buildOnStart: 1
+  pairFaces:
+  - name: Toothbrush
+    image: {fileID: 2800000, guid: 95c7597183b7c4465b9d5e022157c09d, type: 3}
+    sound: {fileID: 0}
+  - name: ChristmasTree
+    image: {fileID: 2800000, guid: 6cf0a9768a3424a2c9f6ecc7df0615f3, type: 3}
+    sound: {fileID: 0}
+  - name: Smile
+    image: {fileID: 2800000, guid: 5e24aed32b8c14dd3bd314de97f8d124, type: 3}
+    sound: {fileID: 0}
+  - name: Socks
+    image: {fileID: 2800000, guid: 9a9ebdedf41564f94baec693ba02240f, type: 3}
+    sound: {fileID: 0}
+  oddTileFace:
+    name: Car
+    image: {fileID: 2800000, guid: e8ca0631dfcd644ea8e26fbe9361e397, type: 3}
+    sound: {fileID: 0}
+  onGridBuilt:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &693392562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693392559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1628983652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &703430919
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,7 +8024,19 @@ MonoBehaviour:
   openSound: {fileID: 0}
   onOpened:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1628983651}
+        m_TargetAssemblyTypeName: GridReveal, Assembly-CSharp
+        m_MethodName: Reveal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1286182983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9569,6 +9681,61 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 821193044}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628983650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628983652}
+  - component: {fileID: 1628983651}
+  m_Layer: 0
+  m_Name: GridReveal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1628983651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628983650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc41e1dfcff7c48f49cf895032fbedac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridReveal
+  grid: {fileID: 693392559}
+  riseDistance: 0.5
+  riseDuration: 1.5
+  delay: 0.2
+  scaleUp: 1
+  revealParticles: {fileID: 0}
+  revealSound: {fileID: 0}
+  onRevealed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1628983652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628983650}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.934, y: 2.226, z: -0.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 693392562}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645169246
 GameObject:
@@ -11983,3 +12150,11 @@ SceneRoots:
   - {fileID: 61572126}
   - {fileID: 1286182979}
   - {fileID: 1781009514}
+<<<<<<< Updated upstream
+=======
+  - {fileID: 944838194}
+  - {fileID: 930013660}
+  - {fileID: 1419421848}
+  - {fileID: 1443290747}
+  - {fileID: 1628983652}
+>>>>>>> Stashed changes
