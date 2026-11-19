@@ -54,3 +54,9 @@ _List every asset, tutorial, or package used, with attribution._
 
 - Meta XR All-in-One SDK
 - Unity XR packages (Input System, URP)
+- Adventure demo kit by Hunter Arc Studio from the Unity Asset Store
+- Simple Low Poly Keys by 3Digitalis from the Unity Asset Store
+- Yughues Free Sand Materials by Nobiax/Yughus from the Unity Asset Store
+- https://www.youtube.com/watch?v=naleCT1D684 - How To Create Night Lighting In Unity URP | Step by Step Tutorial | Unity 6 | Realistic Lighting |
+- https://www.youtube.com/watch?v=VCi_ts5Ubwk - 🗺 Fast HDRI Sky Unity URP - How To Make - Quick Tip
+- Game end screen logic generated and guided by Claude
