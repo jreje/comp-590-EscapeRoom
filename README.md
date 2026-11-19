@@ -4,7 +4,8 @@ A VR escape room game built in Unity for COMP 590 (Assignment 6).
 
 **Team:** Grace, Lucy, Lauren, Julianne
 
-**Demo video:** _add link here_
+**Demo video:** 
+https://youtu.be/cghFgVFUjRI 
 
 ## Requirements
 
